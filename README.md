@@ -1,2 +1,2 @@
-# Math
-This directory is for math operations
+# Introduction
+In the function part you have to put the ecuation you want to solve.
