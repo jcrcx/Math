@@ -5,7 +5,7 @@ using namespace std;
 
 double fn(double x) 
 {
-    return pow(2, x);   /*The function to solve here*/
+    return pow(x, 2);   /*The function to solve here*/
 }
 
 double sumIntegral(double lowBound, int n, double dx)
@@ -32,7 +32,7 @@ void result()
     int n; cin >> n;
     double dx = (double) (upBound - lowBound) / n;
 
-    double result = pow(2, upBound)/log(2) - pow(2, lowBound)/log(2); /*Here the analitical solution to compare results*/
+    double result = pow(upBound,3)/3 - pow(lowBound, 3)/3; /*Here the analitical solution to compare results*/
     
     cout << "---Riemann approximations---" << endl;
     double resultLeft = sumIntegral(lowBound, n, dx);
